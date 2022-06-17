@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f8eded;
+}
+.container {
+    max-width: 1600px;
+    width: 100%;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Playfair Display', serif;
+}
+
+.wrapper {
+    max-width: 1024px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 100px;
+}
+
+.logo img {
+    width: 100%;
+    border-radius: 50px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.social i {
+    font-size: 20px;
+    color: #5b315b;
+}
+
+.main {
+    margin-top: 100px;
+    width: 100%;
+}
+
+.text {
+    font-size: 24px;
+    animation: 9s fadeIn ease;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.text p {
+
+    font-size: 20px;
+}
+
+.portfolio_box {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio_card {
+    max-width: 310px;
+    width: 100%;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 20px;
+    opacity: 0;
+    animation: 5s fadeIn ease;
+    background: linear-gradient(126deg, rgba(2,0,36,1) 0%, rgba(255,234,200,1) 0%, rgba(251,207,248,1) 100%, rgba(41,244,190,1) 100%, rgba(9,121,116,1) 100%, rgba(225,240,247,1) 100%);
+}
+
+.card_1 {
+    animation: show 0.5s forwards 0.5s;
+    animation-duration: 1.5s;
+}
+
+.card_2 {
+    animation: show 0.5s forwards 1s;
+    animation-duration: 1.5s;
+}
+
+.card_3 {
+    animation: show 0.5s forwards 1.5s;
+    animation-duration: 1.5s;
+}
+
+@keyframes show {
+   100% {opacity: 1};
+}
+
+ @-webkit-keyframes show {
+    100% { opacity: 1; }
+}
+
+.portfolio_card:hover {
+    box-shadow: 6px 4px 14px #a8a5a5;
+    background: rgb(2,0,36);
+    transition: .7s;
+    transform: scale(1.1);
+    background: #fff;
+}
+
+.portfolio_card:first-child  {
+    margin-left: 0px;
+}
+
+.portfolio_card:last-child  {
+    margin-right: 0px;
+}
+
+.portfolio_card i {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #5b315b;
+}
+
+.line {
+    width: 100px;
+    border-top: 1px solid #000;
+    margin: 10px 0;
+}
+
+.contact {
+    margin-top: 30px;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    opacity: 0;
+    animation: show 0.5s forwards 2s;
+    animation-duration: 1.5s;
+}
+
+input {
+    width: 200px;
+    height: 35px;
+    margin-top: 5px;
+}
+
+input:focus {
+    background-color: #ffcbf7a2;
+}
+
+textarea {
+    margin-top: 5px;
+}
+
+.button {
+    padding: 0 25px;
+	margin: 5px 15px 15px 0;
+	outline: none;
+	border: 1px solid #fff;
+	border-radius: 50px;
+	height: 46px;
+	line-height: 46px;
+	font-size: 14px;
+	font-weight: 600;
+	text-decoration: none;
+	color: #444;
+	background-color: #fff;
+	box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+	cursor: pointer;
+	user-select: none;
+	appearance: none;
+	touch-action: manipulation;  
+	vertical-align: top;
+	transition: box-shadow 0.2s;
+    width: 150px;
+}
